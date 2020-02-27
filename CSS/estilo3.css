@@ -1,0 +1,304 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18/09/2016, 00:17:32
+    Author     : Janaina
+*/
+
+
+html, body {
+	height: 100%;
+	width: auto;
+	
+	font-size:12px;
+        color:brown;
+        font-family:  Cambria,Arial, sans-serif;
+}
+header {
+	top: 5px;
+	width: 100%;
+	height: 200px;
+	margin-left: 20px;
+	background-repeat:no-repeat;
+	background-position:center;
+        position: absolute;
+        float:left;
+        left: 20%;
+        
+}
+	
+#drop {
+	z-index: 2; /*opção para que o menu fique a frente do banner*/
+	position:absolute;
+	top: 258px;
+	margin-left: 20%;
+	elevation:higher;
+	left: -50px;
+	width: 1050px;
+}
+.bge {
+        
+	width:1200px;
+	margin: 0 auto;
+	position:relative;
+	top: -470px;
+        height:343px;
+        left: 90px;
+       
+}
+.table{
+    width: 1642px;
+    height: 7043px;
+    border:0px;
+       
+}
+
+#menu {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0 0 0;
+    list-style: none;
+	background-color:#C00;
+	background-image: linear-gradient(#C00, #666);
+    border-radius: 50px;
+    box-shadow: 0 2px 1px #9c9c9c;
+}
+
+#menu li {
+    float: left;
+    padding: 0 0 10px 0;
+    position: relative;
+}
+
+#menu a {
+    float: left;
+    height: 25px;
+    padding: 0 25px;
+    color: #FFF;
+    text-transform: uppercase;
+    font: bold 12px/25px Arial, Helvetica;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #000;
+}
+
+#menu li:hover > a {
+    color: #fafafa;
+}
+
+*html #menu li a:hover { /* IE6 */
+    color: #fafafa;
+}
+
+#menu li:hover > ul {
+    display: block;
+}
+ul{
+    left: 35%;
+    
+}
+/* Sub-menu */
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;    
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 99999;    
+    background-color: #444;   
+    background-image: linear-gradient(#C00, #111);    
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#menu ul li {
+    float: none;
+    margin: 0;
+    padding: 0;
+    display: block;  
+    box-shadow: 0 1px 0 #111111, 
+                0 2px 0 #777777;
+}
+
+#menu ul li:last-child { 
+    box-shadow: none;    
+}
+
+#menu ul a {    
+    padding: 10px;
+    height: auto;
+    line-height: 1;
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+}
+
+*html #menu ul a { /* IE6 */   
+    height: 10px;
+    width: 150px;
+}
+
+*:first-child+html #menu ul a { /* IE7 */    
+    height: 10px;
+    width: 150px;
+}
+
+#menu ul a:hover {
+    background-color: #0186ba;
+    background-image: linear-gradient(#04acec, #0186ba);
+}
+
+#menu ul li:first-child a {
+    border-radius: 5px 5px 0 0;
+}
+
+#menu ul li:first-child a:after {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #444;
+}
+
+#menu ul li:first-child a:hover:after {
+    border-bottom-color: #04acec; 
+}
+
+#menu ul li:last-child a {
+    border-radius: 0 0 5px 5px;
+}
+
+/* Clear floated elements */
+#menu:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+* html #menu             { zoom: 1; } /* IE6 */
+*:first-child+html #menu { zoom: 1; } /* IE7 */
+
+#menu ul li:first-child a:after {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #444;
+}
+
+#menu ul li:first-child a:hover:after {
+    border-bottom-color: #04acec; 
+}
+
+
+
+.rotator{
+    background-color:#222;
+    top:10px;
+    left: 50px;
+    width:900px;
+    height:9970px;
+    margin:0px auto;
+    position:relative;
+     color:brown;
+    font-family:  Cambria,Arial, sans-serif;
+    letter-spacing:1px;
+    border:3px solid #f0f0f0;
+   -moz-box-shadow:0px 0px 10px #222;
+    -webkit-box-shadow:0px 0px 10px #222;
+    box-shadow:0px 0px 10px #222;
+}
+.bgd{
+          background-repeat:no-repeat;
+          position: relative;
+          float:right;
+          right: 300px;
+           
+       }  
+       .rotator ul{
+	list-style:none;
+	position:absolute;
+	right:1px;
+	
+	margin-top:6px;
+	z-index:1;
+}
+.rotator ul li{
+    display:block;
+    float:left;
+    
+    clear:both;
+    width:260px;
+}
+.rotator ul li a{
+    width:150px;
+    float:right;
+    clear:both;
+    padding-left:10px;
+    text-decoration:none;
+    display:block;
+    height:52px;
+    line-height:52px;
+    background-color:#222;
+    margin:1px -20px 1px 0px;
+    opacity:0.7;
+    color:#f0f0f0;
+    font-size:20px;
+    border:2px solid #000;
+    border-right:none;
+    outline:none;
+    text-shadow:-1px 1px 1px #000;
+    -moz-border-radius:10px 0px 0px 20px;
+    -webkit-border-top-left-radius:10px;
+    -webkit-border-bottom-left-radius:20px;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:20px;
+}
+.rotator ul li a:hover{
+      text-shadow:0px 0px 2px #fff;
+}
+
+
+a.more{
+    color:orange;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:20px;
+}
+
+
+
+    .titulo {
+     background-color:cadetblue;
+     font-family:Berlin Sans FB Demi,serif;
+     position:relative;
+     font-size:28px;
+     text-align: center;
+     color: darkred;
+     font-weight: bold;     
+    
+}
+ul{
+    top: 00px;
+    left: 5%;
+    
+}
+text{
+    
+}
